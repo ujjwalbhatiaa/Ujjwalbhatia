@@ -224,10 +224,10 @@ const DATA = {
   // Add/replace your real links. Set url to "" to hide a button.
   socials: [
     { name: "Email", url: "mailto:ujjwalbhatia2819@gmail.com", icon: "mail" },
-    { name: "LinkedIn", url: "", icon: "linkedin" },     // <- paste your LinkedIn URL
-    { name: "GitHub", url: "", icon: "github" },         // <- paste your GitHub URL
-    { name: "LeetCode", url: "", icon: "code" },         // <- paste your LeetCode URL
-    { name: "Indeed", url: "", icon: "briefcase" },      // <- paste your Indeed profile URL
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/ujjwal-bhatia2819", icon: "linkedin" },
+    { name: "GitHub", url: "https://github.com/ujjwalbhatiaa", icon: "github" },
+    { name: "LeetCode", url: "", icon: "code" },         // <- paste your LeetCode profile URL here
+    { name: "Indeed", url: "", icon: "briefcase" },      // <- optional: paste your Indeed profile URL here
   ],
 
   /* ------------------------------------------------- AI ASSISTANT KNOWLEDGE */
