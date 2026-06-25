@@ -228,6 +228,7 @@ const DATA = {
     { name: "GitHub", url: "https://github.com/ujjwalbhatiaa", icon: "github" },
     { name: "LeetCode", url: "", icon: "code" },         // <- paste your LeetCode profile URL here
     { name: "Indeed", url: "", icon: "briefcase" },      // <- optional: paste your Indeed profile URL here
+    { name: "Instagram", url: "https://www.instagram.com/ujjwalbhatiaa_", icon: "instagram" },
   ],
 
   /* ------------------------------------------------- AI ASSISTANT KNOWLEDGE */
