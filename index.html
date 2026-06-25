@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ujjwal Bhatia — AI & Computing Science</title>
+  <meta name="description" content="Ujjwal Bhatia — BSc Honours Computing Science (AI) at the University of Alberta. AI/ML engineer, teaching assistant, and builder of intelligent systems." />
+  <meta name="author" content="Ujjwal Bhatia" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Ujjwal Bhatia — AI & Computing Science" />
+  <meta property="og:description" content="AI/ML engineer in training. University of Alberta. Building intelligent systems and clean software." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body>
+  <!-- Animated neural-network background canvas -->
+  <canvas id="neural-canvas" aria-hidden="true"></canvas>
+
+  <!-- Scroll progress bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Custom cursor glow -->
+  <div id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ============================ NAVBAR ============================ -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo"><span class="logo-mark">UB</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Let's talk</a>
+    <button id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- ============================= HERO ============================= -->
+  <header id="hero" class="section hero">
+    <div class="hero-inner">
+      <p class="hero-status" data-reveal><span class="pulse-dot"></span><span id="hero-status-text"></span></p>
+      <h1 class="hero-title" data-reveal>
+        <span class="hero-greet">Hi, I'm</span>
+        <span class="hero-name" id="hero-name"></span>
+      </h1>
+      <h2 class="hero-sub" data-reveal>
+        I build <span id="rotating-role" class="gradient-text"></span><span class="caret">|</span>
+      </h2>
+      <p class="hero-tagline" data-reveal id="hero-tagline"></p>
+      <div class="hero-actions" data-reveal>
+        <a href="#projects" class="btn btn-primary">View my work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        <a id="hero-resume" class="btn btn-ghost" target="_blank" rel="noopener">Resume ↗</a>
+      </div>
+      <div class="hero-socials" id="hero-socials" data-reveal></div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </header>
+
+  <main>
+    <!-- ============================ STATS ============================ -->
+    <section class="section stats-section">
+      <div class="stats-grid" id="stats-grid"></div>
+    </section>
+
+    <!-- ============================ ABOUT ============================ -->
+    <section id="about" class="section">
+      <div class="section-head" data-reveal>
+        <span class="section-kicker">01 — About</span>
+        <h2 class="section-title">Who I am</h2>
+      </div>
+      <div class="about-wrap">
+        <div class="about-text" id="about-text" data-reveal></div>
+        <aside class="about-card glass" data-reveal>
+          <div class="about-monogram" id="about-monogram">UB</div>
+          <ul class="about-facts">
+            <li><span>📍</span> <span id="fact-location"></span></li>
+            <li><span>🎓</span> University of Alberta — CS (AI)</li>
+            <li><span>💬</span> English · Hindi · Punjabi · French</li>
+            <li><span>🟢</span> <span id="fact-status"></span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============================ SKILLS ============================ -->
+    <section id="skills" class="section">
+      <div class="section-head" data-reveal>
+        <span class="section-kicker">02 — Skills</span>
+        <h2 class="section-title">What I work with</h2>
+      </div>
+      <div class="skills-grid" id="skills-grid"></div>
+    </section>
+
+    <!-- ========================== EXPERIENCE ========================== -->
+    <section id="experience" class="section">
+      <div class="section-head" data-reveal>
+        <span class="section-kicker">03 — Experience</span>
+        <h2 class="section-title">Where I've worked</h2>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <!-- =========================== PROJECTS =========================== -->
+    <section id="projects" class="section">
+      <div class="section-head" data-reveal>
+        <span class="section-kicker">04 — Projects</span>
+        <h2 class="section-title">Things I've built</h2>
+      </div>
+      <div class="projects-grid" id="projects-grid"></div>
+    </section>
+
+    <!-- ========================= ACHIEVEMENTS ========================= -->
+    <section id="achievements" class="section">
+      <div class="section-head" data-reveal>
+        <span class="section-kicker">05 — Achievements</span>
+        <h2 class="section-title">Recognition & wins</h2>
+      </div>
+      <div class="achievements-grid" id="achievements-grid"></div>
+    </section>
+
+    <!-- ========================== EDUCATION ========================== -->
+    <section id="education" class="section">
+      <div class="section-head" data-reveal>
+        <span class="section-kicker">06 — Education</span>
+        <h2 class="section-title">My academic path</h2>
+      </div>
+      <div class="education-list" id="education-list"></div>
+    </section>
+
+    <!-- ========================== TERMINAL ============================ -->
+    <section id="terminal-section" class="section">
+      <div class="section-head" data-reveal>
+        <span class="section-kicker">07 — Explore</span>
+        <h2 class="section-title">Or just ask the terminal</h2>
+        <p class="section-desc">Type <code>help</code> and hit enter. Try <code>whoami</code>, <code>skills</code>, <code>projects</code>, <code>contact</code>.</p>
+      </div>
+      <div class="terminal glass" data-reveal>
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">ujjwal@portfolio: ~</span>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+          <div class="terminal-line"><span class="prompt">visitor@ujjwal:~$</span> <span class="typed-intro"></span></div>
+        </div>
+        <div class="terminal-input-line">
+          <span class="prompt">visitor@ujjwal:~$</span>
+          <input id="terminal-input" type="text" autocomplete="off" spellcheck="false" aria-label="Terminal input" />
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== CONTACT ============================ -->
+    <section id="contact" class="section contact">
+      <div class="section-head center" data-reveal>
+        <span class="section-kicker">08 — Contact</span>
+        <h2 class="section-title">Let's build something</h2>
+        <p class="section-desc">Open to AI / software engineering internships and new-grad roles. The fastest way to reach me is email.</p>
+      </div>
+      <div class="contact-actions" data-reveal>
+        <a id="contact-email" class="btn btn-primary btn-lg">Email me</a>
+        <div class="contact-socials" id="contact-socials"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Designed & built by Ujjwal Bhatia · <span id="year"></span></p>
+    <p class="footer-note">Crafted with vanilla HTML, CSS & JavaScript.</p>
+  </footer>
+
+  <!-- ====================== AI CHAT ASSISTANT ====================== -->
+  <button id="chat-fab" aria-label="Open AI assistant">
+    <span class="fab-icon">✦</span>
+    <span class="fab-label">Ask my resume</span>
+  </button>
+  <div id="chat-panel" class="glass" aria-hidden="true">
+    <div class="chat-header">
+      <div class="chat-id">
+        <span class="chat-avatar">✦</span>
+        <div>
+          <strong>Ujjwal's AI Assistant</strong>
+          <small><span class="pulse-dot small"></span>Ask me anything about Ujjwal</small>
+        </div>
+      </div>
+      <button id="chat-close" aria-label="Close">✕</button>
+    </div>
+    <div class="chat-messages" id="chat-messages"></div>
+    <div class="chat-suggestions" id="chat-suggestions"></div>
+    <form class="chat-input" id="chat-form">
+      <input id="chat-text" type="text" placeholder="Ask about my AI experience…" autocomplete="off" />
+      <button type="submit" aria-label="Send">→</button>
+    </form>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/neural.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>
