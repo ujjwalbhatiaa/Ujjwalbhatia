@@ -155,6 +155,15 @@ const DATA = {
   // `link` and `repo` are optional — leave "" to hide the button.
   projects: [
     {
+      title: "StudyCircle — Study-Group Matcher",
+      blurb:
+        "A web app that matches students with compatible study partners using an explainable weighted algorithm — 40% availability overlap on a 7-day time grid, 30% topic Jaccard similarity, plus study-style and goal affinity — then auto-forms cohesive groups with a greedy max-min strategy. Vanilla JS, no frameworks, no backend; engine covered by 18 unit tests plus a 14-assertion jsdom UI test.",
+      tags: ["JavaScript", "Algorithms", "UI/UX", "Testing"],
+      link: "https://ujjwalbhatiaa.github.io/study-group-matcher/",
+      repo: "https://github.com/ujjwalbhatiaa/study-group-matcher",
+      highlight: "Live demo",
+    },
+    {
       title: "Neural Network from Scratch (NumPy)",
       blurb:
         "Built a small neural-network library from scratch with NumPy — no PyTorch/TensorFlow/autograd. Hand-wrote every layer, the softmax-cross-entropy loss, and the full backpropagation pass, plus SGD with momentum & weight decay. Correctness is proven by a numerical gradient check. Hits 97% on a non-linear 3-class spiral (vs 58% for a linear model) and 97.4% on real Iris data.",
