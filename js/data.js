@@ -154,7 +154,16 @@ const DATA = {
   // Showcase technical work here. Add new projects as you build them.
   // `link` and `repo` are optional — leave "" to hide the button.
   projects: [
-    {
+     {
+              title: "kv-store — Log-Structured Key-Value Store",
+              blurb:
+                      "A key-value store built from scratch with the same core design as production systems like Bitcask/LevelDB: an append-only log for durable writes, an in-memory hash index for O(1) reads, tombstone-based deletes that survive restarts, and crash recovery that replays the log and safely truncates a corrupted tail left by a mid-write crash. Benchmarked the durability/throughput tradeoff: 1,543 writes/sec vs 784,239 reads/sec with fsync on every write, and 99.7% size reduction from compaction. Backed by a 19-test suite including a hand-crafted crash-recovery test.",
+              tags: ["Python", "Systems", "Data Structures", "Databases"],
+              link: "",
+              repo: "https://github.com/ujjwalbhatiaa/kv-store",
+              highlight: "Crash-safe + benchmarked",
+     },
+         {
       title: "N-gram Language Model",
       blurb:
         "A dependency-free statistical language model (unigram-4-gram) built from scratch: add-k smoothing with recursive linear interpolation, weights tuned by grid search against a held-out validation set, and rigorous perplexity evaluation. Diagnosed a real methodology pitfall — out-of-domain perplexity looked artificially good because <unk>-bucketing was masking a 2x higher OOV rate rather than genuinely generalizing — and proved it by splitting perplexity into known-word vs. <unk> positions. Backed by a 19-test suite.",
