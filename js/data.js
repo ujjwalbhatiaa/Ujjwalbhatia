@@ -104,20 +104,22 @@ const DATA = {
   /* ------------------------------------------------------------- EXPERIENCE */
   // Most recent first. Add internships / jobs here as you get them.
   experience: [
-    {
-      role: "Events Coordinator",
-      org: "UAlberta Bhangra Club & UAlberta Bollywood Club",
+      {
+      role: "Teaching Assistant — Introductory Computing Science (CMPUT 174)",
+      org: "University of Alberta",
       location: "Edmonton, AB",
-      start: "2025",
+      start: "Jan 2025",
       end: "Present",
       current: true,
       bullets: [
-        "Plan and run large-scale events for two of the University of Alberta's most active student organizations, handling logistics, vendor/venue coordination, and day-of execution.",
-        "Stay in regular contact with a wide cross-section of the student population — a direct pipeline into the broader UAlberta student community.",
+        "Support 50+ students per term in introductory Computing Science and Python, explaining technical concepts in plain language.",
+        "Debug unfamiliar errors in real time during weekly lab sessions and guide students through code optimization and algorithm design.",
+        "Grade assignments with detailed, constructive feedback and coordinate with instructors to align on course objectives.",
+        "Run weekly office hours and lead two weekly lab sections in addition to grading and instruction duties.",
       ],
-      tags: ["Event Planning", "Leadership", "Community"],
+      tags: ["Python", "Teaching", "Debugging", "Algorithms"],
     },
-    {
+     {
       role: "Undergraduate Teaching Assistant — STAT 252",
       org: "University of Alberta",
       location: "Edmonton, AB",
@@ -129,7 +131,7 @@ const DATA = {
       ],
       tags: ["Statistics", "Teaching", "Grading"],
     },
-    {
+     {
       role: "Undergraduate Exam Proctor",
       org: "Faculty of Nursing, University of Alberta",
       location: "Edmonton, AB",
@@ -153,22 +155,7 @@ const DATA = {
       ],
       tags: ["Customer Service", "Event Operations", "Safety Training"],
     },
-    {
-      role: "Teaching Assistant — Introductory Computing Science (CMPUT 174)",
-      org: "University of Alberta",
-      location: "Edmonton, AB",
-      start: "Jan 2025",
-      end: "Present",
-      current: true,
-      bullets: [
-        "Support 50+ students per term in introductory Computing Science and Python, explaining technical concepts in plain language.",
-        "Debug unfamiliar errors in real time during weekly lab sessions and guide students through code optimization and algorithm design.",
-        "Grade assignments with detailed, constructive feedback and coordinate with instructors to align on course objectives.",
-        "Run weekly office hours and lead two weekly lab sections in addition to grading and instruction duties.",
-      ],
-      tags: ["Python", "Teaching", "Debugging", "Algorithms"],
-    },
-    {
+     {
       role: "Assistant Regional Coordinator",
       org: "Edge Living (formerly Harrington Housing)",
       location: "Edmonton, AB · Remote/Hybrid",
@@ -182,6 +169,19 @@ const DATA = {
         "Document interactions and resolutions in internal systems to ensure accurate records and compliance.",
       ],
       tags: ["Operations", "Coordination", "CRM"],
+    },
+     {
+      role: "Events Coordinator",
+      org: "UAlberta Bhangra Club & UAlberta Bollywood Club",
+      location: "Edmonton, AB",
+      start: "2025",
+      end: "Present",
+      current: true,
+      bullets: [
+        "Plan and run large-scale events for two of the University of Alberta's most active student organizations, handling logistics, vendor/venue coordination, and day-of execution.",
+        "Stay in regular contact with a wide cross-section of the student population — a direct pipeline into the broader UAlberta student community.",
+      ],
+      tags: ["Event Planning", "Leadership", "Community"],
     },
     {
       role: "Undergraduate Tutor",
