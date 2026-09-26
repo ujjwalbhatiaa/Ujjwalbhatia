@@ -54,7 +54,7 @@ const DATA = {
   about: [
     "I'm a Computing Science Honours student at the University of Alberta specializing in Artificial Intelligence. I care about the full path from idea to working system — designing the model, writing the code, and making it usable for real people.",
     "As a Teaching Assistant I help 50+ students per term master Python and core computing concepts, debugging unfamiliar errors live and turning confusion into understanding. Before university I founded and ran a business for three years, which taught me ownership, operations, and how to keep customers happy under pressure.",
-    "Outside the classroom I balance six concurrent roles at once — TA-ing two courses, grading Statistics coursework, proctoring Nursing exams, coordinating resident leasing and occupancy for a co-living operator, and serving as Events Coordinator for both the UAlberta Bhangra Club and the UAlberta Bollywood Club, where I plan and run large-scale student events. That mix of technical depth and constant people-facing coordination is a big part of how I work.",
+    "Outside the classroom I balance six concurrent roles at once — TA-ing two courses, grading Statistics coursework, proctoring Nursing exams, coordinating resident leasing and occupancy for a co-living operator, and serving as Events Coordinator for the UAlberta Bollywood Club, where I plan and run large-scale student events. That mix of technical depth and constant people-facing coordination is a big part of how I work.",
     "I move fast on new tools, write clearly, and I'm looking for AI / software engineering roles where I can learn from strong engineers and contribute from day one.",
   ],
 
