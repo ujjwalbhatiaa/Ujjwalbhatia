@@ -172,7 +172,7 @@ const DATA = {
     },
      {
       role: "Events Coordinator",
-      org: "UAlberta Bhangra Club & UAlberta Bollywood Club",
+      org: "UAlberta UAlberta Bollywood Club",
       location: "Edmonton, AB",
       start: "2025",
       end: "Present",
@@ -397,12 +397,12 @@ const DATA = {
     {
       keywords: ["experience", "work", "job", "background"],
       answer:
-        "He currently balances six concurrent roles: Teaching Assistant for CMPUT 174 and STAT 252 at the University of Alberta, Undergraduate Exam Proctor for the Faculty of Nursing, a Parking & Event Services Attendant role, Assistant Regional Coordinator at Edge Living (formerly Harrington Housing) handling resident leasing and occupancy, an Undergraduate Tutor with UASU, and Events Coordinator for both the UAlberta Bhangra Club and UAlberta Bollywood Club. He previously founded and ran a quick-service restaurant for 3 years.",
+        "He currently balances six concurrent roles: Teaching Assistant for CMPUT 174 and STAT 252 at the University of Alberta, Undergraduate Exam Proctor for the Faculty of Nursing, a Parking & Event Services Attendant role, Assistant Regional Coordinator at Edge Living (formerly Harrington Housing) handling resident leasing and occupancy, an Undergraduate Tutor with UASU, and Events Coordinator for the UAlberta Bollywood Club. He previously founded and ran a quick-service restaurant for 3 years.",
     },
     {
-      keywords: ["bhangra", "bollywood", "club", "events coordinator", "event"],
+      keywords: ["bollywood", "club", "events coordinator", "event"],
       answer:
-        "Ujjwal is Events Coordinator for both the UAlberta Bhangra Club and the UAlberta Bollywood Club — two of the university's most active student organizations — planning and running large-scale events and staying in regular contact with a wide cross-section of the student population.",
+        "Ujjwal is Events Coordinator for the UAlberta Bollywood Club — two of the university's most active student organizations — planning and running large-scale events and staying in regular contact with a wide cross-section of the student population.",
     },
     {
       keywords: ["leasing", "property", "housing", "edge living", "harrington", "resident"],
