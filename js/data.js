@@ -65,6 +65,8 @@ const DATA = {
       icon: "brain",
       items: [
         { name: "Python", level: 88 },
+        { name: "PyTorch", level: 72 },
+        { name: "pandas / NumPy / scikit-learn", level: 80 },
         { name: "Machine Learning", level: 72 },
         { name: "Data Structures & Algorithms", level: 78 },
         { name: "HTML / CSS", level: 85 },
@@ -75,6 +77,7 @@ const DATA = {
       icon: "tools",
       items: [
         { name: "Git / GitHub", level: 80 },
+        { name: "Testing (pytest)", level: 78 },
         { name: "Google Workspace", level: 90 },
         { name: "MS Office (Excel/Word/PPT)", level: 90 },
         { name: "SEO Management", level: 72 },
@@ -349,6 +352,8 @@ const DATA = {
 
   /* ----------------------------------------------------------- ACHIEVEMENTS */
   achievements: [
+    { title: "UAlberta Regional Excellence Scholarship", detail: "University of Alberta award recognizing academic excellence.", year: "2024", icon: "trophy" },
+    { title: "International Admission Scholarship", detail: "University of Alberta scholarship for international students.", year: "2024", icon: "star" },
     { title: "Elected Head Boy & Deputy Head Boy", detail: "Student government leadership, chosen by consensus vote.", year: "2022–2024", icon: "crown" },
     { title: "Interschool Entrepreneurship Competition", detail: "2nd prize and ₹11,000 cash award for a viable business idea.", year: "2023", icon: "trophy" },
     { title: "Snapchat Filter — Top 10 Globally", detail: "International Women's Day AR filter recognized worldwide.", year: "2022", icon: "star" },
@@ -428,6 +433,11 @@ const DATA = {
       keywords: ["education", "university", "school", "degree", "study", "alberta"],
       answer:
         "He's at the University of Alberta (2024–present) in the BSc Honours Computing Science AI program, after graduating Class XII with distinction in the science stream from DAV Public School.",
+    },
+    {
+      keywords: ["scholarship", "scholarships", "funding", "award money"],
+      answer:
+        "He holds two University of Alberta scholarships from 2024: the UAlberta Regional Excellence Scholarship and the International Admission Scholarship.",
     },
     {
       keywords: ["leadership", "head boy", "award", "achievement", "prize", "recognition"],
