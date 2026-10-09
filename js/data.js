@@ -33,7 +33,7 @@ const DATA = {
     email: "ujjwalbhatia2819@gmail.com",
     phone: "+1 (780) 709-3479",
     // Short status line shown near your name
-    status: "Open to AI / Software Engineering internships & new-grad roles · Eligible to work in Canada",
+    status: "Open to Summer 2027 internships & co-ops (AI / software engineering) · Eligible to work in Canada",
     // Optional: path to a profile photo. Leave "" to show an animated monogram instead.
     photo: "",
     // Optional: path to your resume PDF (drop the file in this folder to enable the button)
@@ -369,7 +369,7 @@ const DATA = {
       degree: "BSc Honours, Computing Science — AI Specialization",
       location: "Edmonton, AB",
       period: "2024 – Present",
-      note: "Honours program specializing in Artificial Intelligence.",
+      note: "Honours program specializing in Artificial Intelligence. Expected graduation: June 2028.",
     },
     {
       school: "DAV Public School",
@@ -443,6 +443,11 @@ const DATA = {
       keywords: ["leadership", "head boy", "award", "achievement", "prize", "recognition"],
       answer:
         "Leadership & recognition: elected Head Boy and Deputy Head Boy, 2nd prize in an interschool entrepreneurship competition (₹11,000 award), a top-10 global Snapchat filter, and regional/national CBSE science prizes.",
+    },
+    {
+      keywords: ["summer 2027", "internship availability", "when available", "start date", "hiring", "internship for", "looking for internship"],
+      answer:
+        "Ujjwal is actively seeking a paid Summer 2027 internship or co-op (starting ~May 2027) in software engineering, ML/AI, or data. He's eligible to work in Canada (study permit, no sponsorship needed), enrolled in UAlberta's co-op program, and open to Edmonton, remote, or relocation.",
     },
     {
       keywords: ["contact", "email", "reach", "hire", "available", "internship"],
