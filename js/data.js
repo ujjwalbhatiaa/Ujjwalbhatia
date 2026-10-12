@@ -422,12 +422,12 @@ const DATA = {
     {
       keywords: ["skills", "languages", "programming", "tech stack", "python"],
       answer:
-        "Core skills: Python (strongest), machine learning, data structures & algorithms, JavaScript, HTML/CSS, Git/GitHub, and SEO. He also speaks English, Hindi, and Punjabi fluently, with beginner French.",
+        "Core skills: Python (strongest), PyTorch, pandas/NumPy/scikit-learn, machine learning, data structures & algorithms, testing with pytest, JavaScript, HTML/CSS, and Git/GitHub. He also speaks English, Hindi, and Punjabi fluently, with beginner French.",
     },
     {
-      keywords: ["project", "projects", "built", "magnoc", "snapchat", "portfolio"],
+      keywords: ["project", "projects", "built", "magnoc", "snapchat", "portfolio", "software", "redis", "rag", "github"],
       answer:
-        "Highlights include founding MagnoC (a smart toy concept), a Snapchat AR filter ranked top-10 globally, and award-winning CBSE science exhibition projects. New software/ML projects are added to the Projects section as he builds them.",
+        "His strongest software projects: tiny-redis — a RESP-protocol Redis clone in pure Python (strings/lists/sets/hashes, key expiry, persistence, ~36k ops/sec); rag-from-scratch — a complete RAG pipeline with chunking, BM25 retrieval, bigram reranking and grounded cited generation; a log-structured kv-store with crash-safe recovery; a PyTorch CNN reaching 90.4% on Fashion-MNIST; and an end-to-end ML bike-demand forecast (R²=0.91 on real data). All on his GitHub at github.com/ujjwalbhatiaa. He also founded MagnoC (smart toy concept) and shipped a Snapchat AR filter ranked top-10 globally.",
     },
     {
       keywords: ["education", "university", "school", "degree", "study", "alberta"],
@@ -452,7 +452,7 @@ const DATA = {
     {
       keywords: ["contact", "email", "reach", "hire", "available", "internship"],
       answer:
-        "Ujjwal is open to AI / software engineering internships and new-grad roles. Reach him at ujjwalbhatia2819@gmail.com or +1 (780) 709-3479. He's based in Edmonton and open to remote work.",
+        "Ujjwal is open to Summer 2027 internships and co-ops in AI and software engineering. Reach him at ujjwalbhatia2819@gmail.com or +1 (780) 709-3479. He's based in Edmonton and open to remote work.",
     },
     {
       keywords: ["location", "where", "based", "edmonton", "remote"],
