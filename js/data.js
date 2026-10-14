@@ -232,6 +232,15 @@ const DATA = {
   // `link` and `repo` are optional — leave "" to hide the button.
   projects: [
     {
+      title: "tiny-redis — RESP-Protocol Redis Clone",
+      blurb:
+        "A Redis clone in pure Python (standard library only) that the real `redis-cli` can talk to: strings, lists, sets, and hashes with key expiry, glob `KEYS`, cursor-based `SCAN` iteration with `MATCH`/`COUNT`, set algebra (`SINTER`/`SUNION`/`SDIFF`), numeric commands, and RDB-style snapshots with save/load. Thread-safe keyspace behind a re-entrant lock, with an incremental RESP protocol parser. Benchmarked at ~36k ops/sec over loopback; backed by a 35-test pytest suite that spins up a real server and speaks RESP over a socket.",
+      tags: ["Python", "Networking", "Databases", "Systems"],
+      link: "",
+      repo: "https://github.com/ujjwalbhatiaa/tiny-redis",
+      highlight: "redis-cli compatible",
+    },
+    {
       title: "kv-store — Log-Structured Key-Value Store",
       blurb:
         "A key-value store built from scratch with the same core design as production systems like Bitcask/LevelDB: an append-only log for durable writes, an in-memory hash index for O(1) reads, tombstone-based deletes that survive restarts, and crash recovery that replays the log and safely truncates a corrupted tail left by a mid-write crash. Benchmarked the durability/throughput tradeoff: 1,543 writes/sec vs 784,239 reads/sec with fsync on every write, and 99.7% size reduction from compaction. Backed by a 19-test suite including a hand-crafted crash-recovery test.",
@@ -453,6 +462,11 @@ const DATA = {
       keywords: ["contact", "email", "reach", "hire", "available", "internship"],
       answer:
         "Ujjwal is open to Summer 2027 internships and co-ops in AI and software engineering. Reach him at ujjwalbhatia2819@gmail.com or +1 (780) 709-3479. He's based in Edmonton and open to remote work.",
+    },
+    {
+      keywords: ["work authorization", "authorized", "authorization", "visa", "sponsorship", "sponsor", "work permit", "permit", "eligible to work", "immigration"],
+      answer:
+        "Ujjwal is legally authorized to work in Canada on his study permit — no employer sponsorship needed. Summer 2027 is a scheduled academic break, so he can work full-time then. He's based in Edmonton and open to remote, hybrid, or on-site roles (relocation included).",
     },
     {
       keywords: ["location", "where", "based", "edmonton", "remote"],
