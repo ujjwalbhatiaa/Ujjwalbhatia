@@ -71,6 +71,8 @@ const DATA = {
         { name: "Data Structures & Algorithms", level: 78 },
         { name: "HTML / CSS", level: 85 },
         { name: "JavaScript", level: 70 },
+        { name: "SQL / SQLite", level: 74 },
+        { name: "FastAPI", level: 72 },
       ],
     },
     "Tools & Platforms": {
@@ -250,6 +252,15 @@ const DATA = {
       highlight: "Crash-safe + benchmarked",
     },
     {
+      title: "rag-from-scratch — RAG Pipeline from Scratch",
+      blurb:
+        "A complete retrieval-augmented generation pipeline built from scratch in pure Python — no LangChain, no frameworks. Recursive overlapping chunking, hand-rolled Okapi BM25 retrieval, reranking that fuses BM25 with query–chunk bigram overlap (or MMR for diversity), and grounded generation that enforces [1], [2] citations and answers \"I don't know\" when the context is missing. Ships with a CLI (ingest / ask / eval) and an eval harness reporting recall@k, MRR, and citation coverage, with an honest extractive fallback when no API key is set. Backed by a pytest suite covering chunking, retrieval, both rerankers, generation, and eval.",
+      tags: ["Python", "NLP", "Information Retrieval", "LLMs"],
+      link: "",
+      repo: "https://github.com/ujjwalbhatiaa/rag-from-scratch",
+      highlight: "From-scratch RAG",
+    },
+    {
       title: "N-gram Language Model",
       blurb:
         "A dependency-free statistical language model (unigram-4-gram) built from scratch: add-k smoothing with recursive linear interpolation, weights tuned by grid search against a held-out validation set, and rigorous perplexity evaluation. Diagnosed a real methodology pitfall — out-of-domain perplexity looked artificially good because <unk>-bucketing was masking a 2x higher OOV rate rather than genuinely generalizing — and proved it by splitting perplexity into known-word vs. <unk> positions. Backed by a 19-test suite.",
@@ -320,6 +331,15 @@ const DATA = {
       link: "",
       repo: "https://github.com/ujjwalbhatiaa/csv-insights",
       highlight: "Pure stdlib",
+    },
+    {
+      title: "Expense Tracker — iOS-to-Sheets Pipeline",
+      blurb:
+        "A personal expense tracker built for daily use: double-tap the iPhone's back to log an expense through a mobile form, which posts to a Google Apps Script web app that appends to a Google Sheet — a Transactions log plus a dark-mode dashboard aggregating spend across 12 canonical categories. Debugged the full pipeline end-to-end, including a real swapped key/value bug in the iOS Shortcut wiring, and shipped it as a new Apps Script deployment version.",
+      tags: ["Google Apps Script", "Automation", "Data Viz", "REST"],
+      link: "",
+      repo: "",
+      highlight: "Deployed + used daily",
     },
     {
       title: "MagnoC — Smart Toy Concept",
