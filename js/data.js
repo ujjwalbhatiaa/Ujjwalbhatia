@@ -236,7 +236,7 @@ const DATA = {
     {
       title: "tiny-redis — RESP-Protocol Redis Clone",
       blurb:
-        "A Redis clone in pure Python (standard library only) that the real `redis-cli` can talk to: strings (SETEX/PSETEX set-with-expiry, conditional SETNX/MSETNX/GETSET), lists, sets with algebra (SINTER/SUNION/SDIFF), hashes, and sorted sets, the full key-expiry family (EXPIRE/PEXPIRE/TTL/PTTL/PERSIST), glob `KEYS`, cursor-based `SCAN` iteration with `MATCH`/`COUNT`, and RDB-style snapshots with save/load. Thread-safe keyspace behind a re-entrant lock, with an incremental RESP protocol parser. Benchmarked at ~36k ops/sec over loopback; backed by a 135-test pytest suite that spins up a real server and speaks RESP over a socket.",
+        "A Redis clone in pure Python (standard library only) that the real `redis-cli` can talk to: strings (SETEX/PSETEX set-with-expiry, GETDEL/GETEX get-with-delete-or-expiry, conditional SETNX/MSETNX/GETSET), lists, sets with algebra (SINTER/SUNION/SDIFF), hashes, and sorted sets, the full key-expiry family (EXPIRE/PEXPIRE/TTL/PTTL/PERSIST), glob `KEYS`, cursor-based `SCAN` iteration with `MATCH`/`COUNT`, and RDB-style snapshots with save/load. Thread-safe keyspace behind a re-entrant lock, with an incremental RESP protocol parser. Benchmarked at ~36k ops/sec over loopback; backed by a 148-test pytest suite that spins up a real server and speaks RESP over a socket.",
       tags: ["Python", "Networking", "Databases", "Systems"],
       link: "",
       repo: "https://github.com/ujjwalbhatiaa/tiny-redis",
