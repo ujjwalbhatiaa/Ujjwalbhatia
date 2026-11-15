@@ -71,8 +71,6 @@ const DATA = {
         { name: "Data Structures & Algorithms", level: 78 },
         { name: "HTML / CSS", level: 85 },
         { name: "JavaScript", level: 70 },
-        { name: "SQL / SQLite", level: 74 },
-        { name: "FastAPI", level: 72 },
       ],
     },
     "Tools & Platforms": {
@@ -236,7 +234,7 @@ const DATA = {
     {
       title: "tiny-redis — RESP-Protocol Redis Clone",
       blurb:
-        "A Redis clone in pure Python (standard library only) that the real `redis-cli` can talk to: strings (SETEX/PSETEX set-with-expiry, GETDEL/GETEX get-with-delete-or-expiry, conditional SETNX/MSETNX/GETSET), lists, sets with algebra (SINTER/SUNION/SDIFF), hashes, and sorted sets, the full key-expiry family (EXPIRE/PEXPIRE/TTL/PTTL/PERSIST), glob `KEYS`, cursor-based `SCAN` iteration with `MATCH`/`COUNT`, and RDB-style snapshots with save/load. Thread-safe keyspace behind a re-entrant lock, with an incremental RESP protocol parser. Benchmarked at ~36k ops/sec over loopback; backed by a 148-test pytest suite that spins up a real server and speaks RESP over a socket.",
+        "A Redis clone in pure Python (standard library only) that the real `redis-cli` can talk to: strings, lists, sets, and hashes with key expiry, glob `KEYS`, cursor-based `SCAN` iteration with `MATCH`/`COUNT`, set algebra (`SINTER`/`SUNION`/`SDIFF`), numeric commands, and RDB-style snapshots with save/load. Thread-safe keyspace behind a re-entrant lock, with an incremental RESP protocol parser. Benchmarked at ~36k ops/sec over loopback; backed by a 212-test pytest suite that spins up a real server and speaks RESP over a socket.",
       tags: ["Python", "Networking", "Databases", "Systems"],
       link: "",
       repo: "https://github.com/ujjwalbhatiaa/tiny-redis",
@@ -254,7 +252,7 @@ const DATA = {
     {
       title: "rag-from-scratch — RAG Pipeline from Scratch",
       blurb:
-        "A complete retrieval-augmented generation pipeline built from scratch in pure Python — no LangChain, no frameworks. Recursive overlapping chunking, hand-rolled Okapi BM25 retrieval, reranking that fuses BM25 with query–chunk bigram overlap (or MMR for diversity), and grounded generation that enforces [1], [2] citations and answers \"I don't know\" when the context is missing. Ships with a CLI (ingest / ask / eval / search — the search view exposes ranked chunks with scores for debugging retrieval without an API key) and an eval harness reporting recall@k, MRR, and citation coverage, with an honest extractive fallback when no API key is set. Backed by a pytest suite covering chunking, retrieval, both rerankers, generation, eval, and the search CLI.",
+        "A complete retrieval-augmented generation pipeline built from scratch in pure Python — no LangChain, no frameworks. Recursive overlapping chunking, hand-rolled Okapi BM25 retrieval, reranking that fuses BM25 with query–chunk bigram overlap (or MMR for diversity), and grounded generation that enforces [1], [2] citations and answers \"I don't know\" when the context is missing. Ships with a CLI (ingest / ask / eval) and an eval harness reporting recall@k, MRR, and citation coverage, with an honest extractive fallback when no API key is set. Backed by a pytest suite covering chunking, retrieval, both rerankers, generation, and eval.",
       tags: ["Python", "NLP", "Information Retrieval", "LLMs"],
       link: "",
       repo: "https://github.com/ujjwalbhatiaa/rag-from-scratch",
@@ -333,13 +331,94 @@ const DATA = {
       highlight: "Pure stdlib",
     },
     {
-      title: "Expense Tracker — iOS-to-Sheets Pipeline",
+      title: "budget-tracker — Full-Stack Personal Budget Tracker",
       blurb:
-        "A personal expense tracker built for daily use: double-tap the iPhone's back to log an expense through a mobile form, which posts to a Google Apps Script web app that appends to a Google Sheet — a Transactions log plus a dark-mode dashboard aggregating spend across 12 canonical categories. Debugged the full pipeline end-to-end, including a real swapped key/value bug in the iOS Shortcut wiring, and shipped it as a new Apps Script deployment version.",
-      tags: ["Google Apps Script", "Automation", "Data Viz", "REST"],
+        "A full-stack personal budget tracker: a FastAPI + SQLite backend with a vanilla-JS frontend. Add transactions, browse history, and see monthly summaries with per-category spending breakdowns, through a REST API (transactions, summary, categories) with Pydantic validation.",
+      tags: ["Python", "FastAPI", "SQLite", "JavaScript"],
       link: "",
-      repo: "",
-      highlight: "Deployed + used daily",
+      repo: "https://github.com/ujjwalbhatiaa/budget-tracker",
+      highlight: "Full-stack",
+    },
+    {
+      title: "envdiff — .env File Differ",
+      blurb:
+        "Compare two .env files and report exactly what changed — added, removed, and changed keys — with secret values masked by default. Understands .env format (unlike raw diff), with JSON output, --ignore-keys, and exit codes for scripting. Backed by a 31-test pytest suite.",
+      tags: ["Python", "CLI"],
+      link: "",
+      repo: "https://github.com/ujjwalbhatiaa/envdiff",
+      highlight: "Secrets masked",
+    },
+    {
+      title: "passgen — Secure Password & Passphrase Generator",
+      blurb:
+        "Generate secure passwords and passphrases from the command line — no dependencies, pure Python standard library, with randomness from the secrets module. Custom length and alphabets, wordlist passphrases, strength checking, and JSON output. Backed by a 36-test pytest suite.",
+      tags: ["Python", "CLI", "Security"],
+      link: "",
+      repo: "https://github.com/ujjwalbhatiaa/passgen",
+      highlight: "Cryptographically secure",
+    },
+    {
+      title: "logq — Web Access Log Query Tool",
+      blurb:
+        "Query and analyse web server access logs from the command line — no dependencies, pure Python standard library. Parses Apache/Nginx Common and Combined Log Format, filters by status, method, path, IP, and time, and answers the questions you actually ask: top IPs, 404s, error rate, and traffic spikes. Backed by a 69-test pytest suite.",
+      tags: ["Python", "CLI", "Data"],
+      link: "",
+      repo: "https://github.com/ujjwalbhatiaa/logq",
+      highlight: "Apache/Nginx log analysis",
+    },
+    {
+      title: "jsonq — JSON Query CLI",
+      blurb:
+        "Query JSON from the command line — no dependencies, pure Python standard library. Reads JSON from a file or stdin and extracts values with a small path language: dotted keys, array indices, wildcards, and filters — the tool you reach for when grep is not enough and jq is not installed. Backed by a 61-test pytest suite.",
+      tags: ["Python", "CLI", "Data"],
+      link: "",
+      repo: "https://github.com/ujjwalbhatiaa/jsonq",
+      highlight: "jq-style queries, no jq needed",
+    },
+    {
+      title: "ipcalc — Subnet / CIDR Calculator",
+      blurb:
+        "A subnet / CIDR calculator for IPv4. Pure Python, standard library only. Parse an address in CIDR notation, with a dotted netmask, or a bare prefix, and get network and broadcast addresses, usable host range, host counts, wildcard mask, IP class, and private/public status — plus membership and overlap tests, subnet splitting, and CIDR summarization. Backed by a 59-test pytest suite.",
+      tags: ["Python", "CLI", "Networking"],
+      link: "",
+      repo: "https://github.com/ujjwalbhatiaa/ipcalc",
+      highlight: "CIDR / subnet calculator",
+    },
+    {
+      title: "croncalc — Cron Expression Explainer",
+      blurb:
+        "Explain a cron expression in plain English and list its next run times. Pure Python standard library, zero dependencies. Supports 5-field expressions and shortcuts (@hourly, @daily, @weekly…), with a configurable reference time and run count. Backed by a 65-test pytest suite.",
+      tags: ["Python", "CLI"],
+      link: "",
+      repo: "https://github.com/ujjwalbhatiaa/croncalc",
+      highlight: "Cron in plain English",
+    },
+    {
+      title: "csvq — SQL Queries over CSV",
+      blurb:
+        "Run SQL-like queries against CSV files — no database, no dependencies, just Python. SELECT / WHERE / ORDER BY / LIMIT over any CSV, with --count, --json, and --table output modes. Backed by a 42-test pytest suite.",
+      tags: ["Python", "CLI", "SQL", "Data"],
+      link: "",
+      repo: "https://github.com/ujjwalbhatiaa/csvq",
+      highlight: "SQL over CSV",
+    },
+    {
+      title: "mdlinkcheck — Markdown Dead-Link Checker",
+      blurb:
+        "A dead-link checker for Markdown files. Point it at a file or a directory and it finds every link and tells you which ones are broken — HTTP(S) links via HEAD (falling back to GET), plus local #anchors and relative file paths. Pure Python, standard library only. Backed by a 31-test pytest suite.",
+      tags: ["Python", "CLI"],
+      link: "",
+      repo: "https://github.com/ujjwalbhatiaa/mdlinkcheck",
+      highlight: "Dead-link checker",
+    },
+    {
+      title: "dupfind — Duplicate File Finder",
+      blurb:
+        "Find duplicate files by content — fast, because it only hashes files that actually might be duplicates. Groups files by size, SHA-256-hashes only the size buckets with more than one entry, and reports true duplicates (same size and hash), with JSON output and an interactive --delete mode. Backed by a 24-test pytest suite.",
+      tags: ["Python", "CLI"],
+      link: "",
+      repo: "https://github.com/ujjwalbhatiaa/dupfind",
+      highlight: "Content-hash dedup",
     },
     {
       title: "MagnoC — Smart Toy Concept",
