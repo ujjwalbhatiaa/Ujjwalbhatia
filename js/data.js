@@ -340,6 +340,15 @@ const DATA = {
       highlight: "Full-stack",
     },
     {
+      title: "dusage — Disk Usage Analyzer",
+      blurb:
+        "Summarize disk usage of a directory tree from the command line — no dependencies, pure Python standard library. Total size, file and directory counts, the largest files and subdirectories, and a breakdown by file extension, with --top, --depth, --min-size, --json, and --exclude options. Backed by a 25-test pytest suite.",
+      tags: ["Python", "CLI"],
+      link: "",
+      repo: "https://github.com/ujjwalbhatiaa/dusage",
+      highlight: "Largest files & extensions",
+    },
+    {
       title: "envdiff — .env File Differ",
       blurb:
         "Compare two .env files and report exactly what changed — added, removed, and changed keys — with secret values masked by default. Understands .env format (unlike raw diff), with JSON output, --ignore-keys, and exit codes for scripting. Backed by a 31-test pytest suite.",
