@@ -340,6 +340,15 @@ const DATA = {
       highlight: "Full-stack",
     },
     {
+      title: "timelog — CLI Time Tracker",
+      blurb:
+        "Track where your hours go from the command line — start/stop/status/list/report with --at backdating and per-task totals for today, week, and all time, stored in a plain JSON file. No dependencies, pure Python standard library. Backed by a 25-test pytest suite.",
+      tags: ["Python", "CLI"],
+      link: "",
+      repo: "https://github.com/ujjwalbhatiaa/timelog",
+      highlight: "Per-task totals",
+    },
+    {
       title: "dusage — Disk Usage Analyzer",
       blurb:
         "Summarize disk usage of a directory tree from the command line — no dependencies, pure Python standard library. Total size, file and directory counts, the largest files and subdirectories, and a breakdown by file extension, with --top, --depth, --min-size, --json, and --exclude options. Backed by a 25-test pytest suite.",
