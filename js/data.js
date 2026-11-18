@@ -340,6 +340,15 @@ const DATA = {
       highlight: "Full-stack",
     },
     {
+      title: "flash — CLI Flashcard Quizzer",
+      blurb:
+        "Quiz yourself from the command line with spaced repetition — add cards to decks, quiz the ones that are due, and let the review interval grow as you get them right (1/3/7/14/30/60/120 days); cards you struggle with come back soonest. No dependencies, pure Python standard library. Backed by a 29-test pytest suite.",
+      tags: ["Python", "CLI"],
+      link: "",
+      repo: "https://github.com/ujjwalbhatiaa/flash",
+      highlight: "Spaced repetition",
+    },
+    {
       title: "timelog — CLI Time Tracker",
       blurb:
         "Track where your hours go from the command line — start/stop/status/list/report with --at backdating and per-task totals for today, week, and all time, stored in a plain JSON file. No dependencies, pure Python standard library. Backed by a 25-test pytest suite.",
