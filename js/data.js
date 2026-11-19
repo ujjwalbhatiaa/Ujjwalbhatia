@@ -340,6 +340,15 @@ const DATA = {
       highlight: "Full-stack",
     },
     {
+      title: "habit — CLI Habit Streak Tracker",
+      blurb:
+        "Build daily habits from the command line — add a habit, check it off each day, and watch current and best streaks grow, with per-habit streak views and overall stats, stored in a plain JSON file. No dependencies, pure Python standard library. Backed by a 30-test pytest suite.",
+      tags: ["Python", "CLI"],
+      link: "",
+      repo: "https://github.com/ujjwalbhatiaa/habit",
+      highlight: "Streak tracking",
+    },
+    {
       title: "flash — CLI Flashcard Quizzer",
       blurb:
         "Quiz yourself from the command line with spaced repetition — add cards to decks, quiz the ones that are due, and let the review interval grow as you get them right (1/3/7/14/30/60/120 days); cards you struggle with come back soonest. No dependencies, pure Python standard library. Backed by a 29-test pytest suite.",
