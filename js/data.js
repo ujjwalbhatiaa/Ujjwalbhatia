@@ -340,6 +340,15 @@ const DATA = {
       highlight: "Full-stack",
     },
     {
+      title: "epoch — CLI Timestamp Converter",
+      blurb:
+        "Convert timestamps from the command line — Unix seconds (or milliseconds) ↔ ISO 8601 dates across IANA timezones, with now/to/from/diff/add and human durations like 2d3h30m. No dependencies, pure Python standard library. Backed by a 31-test pytest suite.",
+      tags: ["Python", "CLI"],
+      link: "",
+      repo: "https://github.com/ujjwalbhatiaa/epoch",
+      highlight: "Timezones",
+    },
+    {
       title: "habit — CLI Habit Streak Tracker",
       blurb:
         "Build daily habits from the command line — add a habit, check it off each day, and watch current and best streaks grow, with per-habit streak views and overall stats, stored in a plain JSON file. No dependencies, pure Python standard library. Backed by a 30-test pytest suite.",
