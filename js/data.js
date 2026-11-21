@@ -340,6 +340,15 @@ const DATA = {
       highlight: "Full-stack",
     },
     {
+      title: "units — CLI Unit Converter",
+      blurb:
+        "Convert units from the command line — length, mass, temperature, volume, area, data, speed, and time, with both a convert subcommand and a natural form like units 5 km to mi, plus unit aliases and a category listing. No dependencies, pure Python standard library. Backed by a 58-test pytest suite.",
+      tags: ["Python", "CLI"],
+      link: "",
+      repo: "https://github.com/ujjwalbhatiaa/units",
+      highlight: "Conversion",
+    },
+    {
       title: "epoch — CLI Timestamp Converter",
       blurb:
         "Convert timestamps from the command line — Unix seconds (or milliseconds) ↔ ISO 8601 dates across IANA timezones, with now/to/from/diff/add and human durations like 2d3h30m. No dependencies, pure Python standard library. Backed by a 31-test pytest suite.",
