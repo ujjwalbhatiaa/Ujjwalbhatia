@@ -349,6 +349,24 @@ const DATA = {
       highlight: "Conversion",
     },
     {
+      title: "portscan — CLI TCP Port Scanner",
+      blurb:
+        "Scan hosts for open TCP ports from the command line — single ports, ranges, lists, or a common-ports preset, with configurable timeout and concurrency, service-name lookup, and table or JSON output. No dependencies, pure Python standard library. Backed by a 21-test pytest suite.",
+      tags: ["Python", "CLI"],
+      link: "",
+      repo: "https://github.com/ujjwalbhatiaa/portscan",
+      highlight: "Networking",
+    },
+    {
+      title: "jsondiff — CLI JSON Diff",
+      blurb:
+        "Structurally diff two JSON files from the command line — added, removed, and changed paths with JSON-Pointer-ish paths, type-change reporting, --ignore, --json, and --brief, plus CI-friendly exit codes (0 identical / 1 differences / 2 error). No dependencies, pure Python standard library. Backed by a 32-test pytest suite.",
+      tags: ["Python", "CLI"],
+      link: "",
+      repo: "https://github.com/ujjwalbhatiaa/jsondiff",
+      highlight: "Diffing",
+    },
+    {
       title: "epoch — CLI Timestamp Converter",
       blurb:
         "Convert timestamps from the command line — Unix seconds (or milliseconds) ↔ ISO 8601 dates across IANA timezones, with now/to/from/diff/add and human durations like 2d3h30m. No dependencies, pure Python standard library. Backed by a 31-test pytest suite.",
