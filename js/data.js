@@ -367,6 +367,15 @@ const DATA = {
       highlight: "Diffing",
     },
     {
+      title: "mdtoc — Markdown Table-of-Contents Generator",
+      blurb:
+        "A dependency-free Python CLI that generates a table of contents for a Markdown file — GitHub-style anchor slugs, fenced-code-aware heading extraction, idempotent --insert between <!-- toc --> markers, and a --check mode for CI. 27-test pytest suite.",
+      tags: ["Python", "CLI"],
+      link: "",
+      repo: "https://github.com/ujjwalbhatiaa/mdtoc",
+      highlight: "Markdown",
+    },
+    {
       title: "epoch — CLI Timestamp Converter",
       blurb:
         "Convert timestamps from the command line — Unix seconds (or milliseconds) ↔ ISO 8601 dates across IANA timezones, with now/to/from/diff/add and human durations like 2d3h30m. No dependencies, pure Python standard library. Backed by a 31-test pytest suite.",
