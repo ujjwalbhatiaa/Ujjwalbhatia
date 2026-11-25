@@ -376,6 +376,15 @@ const DATA = {
       highlight: "Markdown",
     },
     {
+      title: "pydeps — Python Dependency Lister",
+      blurb:
+        "Lists the third-party dependencies of a Python project by scanning its imports — AST-based parsing, stdlib/local/third-party classification, JSON and requirements.txt output modes, with excluded-directory handling. 20-test pytest suite.",
+      tags: ["Python", "CLI"],
+      link: "",
+      repo: "https://github.com/ujjwalbhatiaa/pydeps",
+      highlight: "Import scanner",
+    },
+    {
       title: "epoch — CLI Timestamp Converter",
       blurb:
         "Convert timestamps from the command line — Unix seconds (or milliseconds) ↔ ISO 8601 dates across IANA timezones, with now/to/from/diff/add and human durations like 2d3h30m. No dependencies, pure Python standard library. Backed by a 31-test pytest suite.",
