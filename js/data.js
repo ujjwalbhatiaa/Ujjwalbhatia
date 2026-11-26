@@ -234,7 +234,7 @@ const DATA = {
     {
       title: "tiny-redis — RESP-Protocol Redis Clone",
       blurb:
-        "A Redis clone in pure Python (standard library only) that the real `redis-cli` can talk to: strings, lists, sets, and hashes with key expiry, glob `KEYS`, cursor-based `SCAN` iteration with `MATCH`/`COUNT`, set algebra (`SINTER`/`SUNION`/`SDIFF`), numeric commands, and RDB-style snapshots with save/load. Thread-safe keyspace behind a re-entrant lock, with an incremental RESP protocol parser. Benchmarked at ~36k ops/sec over loopback; backed by a 212-test pytest suite that spins up a real server and speaks RESP over a socket. Also shipped eighteen dependency-free Python CLI tools, one per day (Nov 7–24, 2026), each with its own pytest suite.",
+        "A Redis clone in pure Python (standard library only) that the real `redis-cli` can talk to: strings, lists, sets, and hashes with key expiry, glob `KEYS`, cursor-based `SCAN` iteration with `MATCH`/`COUNT`, set algebra (`SINTER`/`SUNION`/`SDIFF`), numeric commands, and RDB-style snapshots with save/load. Thread-safe keyspace behind a re-entrant lock, with an incremental RESP protocol parser. Benchmarked at ~36k ops/sec over loopback; backed by a 212-test pytest suite that spins up a real server and speaks RESP over a socket. Also shipped twenty dependency-free Python CLI tools, one per day (Nov 7–26, 2026), each with its own test suite.",
       tags: ["Python", "Networking", "Databases", "Systems"],
       link: "",
       repo: "https://github.com/ujjwalbhatiaa/tiny-redis",
@@ -383,6 +383,15 @@ const DATA = {
       link: "",
       repo: "https://github.com/ujjwalbhatiaa/pydeps",
       highlight: "Import scanner",
+    },
+    {
+      title: "benchit — Command Benchmarking CLI",
+      blurb:
+        "Run a command N times and report timing statistics (min, max, mean, median, stdev, p90, p95, p99) — warmup runs, timeouts, JSON output. Pure Python, zero dependencies. 26-test unittest suite.",
+      tags: ["Python", "CLI"],
+      link: "",
+      repo: "https://github.com/ujjwalbhatiaa/benchit",
+      highlight: "Benchmarking",
     },
     {
       title: "epoch — CLI Timestamp Converter",
