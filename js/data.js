@@ -234,7 +234,7 @@ const DATA = {
     {
       title: "tiny-redis — RESP-Protocol Redis Clone",
       blurb:
-        "A Redis clone in pure Python (standard library only) that the real `redis-cli` can talk to: strings, lists, sets, and hashes with key expiry, glob `KEYS`, cursor-based `SCAN` iteration with `MATCH`/`COUNT`, set algebra (`SINTER`/`SUNION`/`SDIFF`), numeric commands, and RDB-style snapshots with save/load. Thread-safe keyspace behind a re-entrant lock, with an incremental RESP protocol parser. Benchmarked at ~36k ops/sec over loopback; backed by a 212-test pytest suite that spins up a real server and speaks RESP over a socket. Also shipped twenty dependency-free Python CLI tools, one per day (Nov 7–26, 2026), each with its own test suite.",
+        "A Redis clone in pure Python (standard library only) that the real `redis-cli` can talk to: strings, lists, sets, and hashes with key expiry, glob `KEYS`, cursor-based `SCAN` iteration with `MATCH`/`COUNT`, set algebra (`SINTER`/`SUNION`/`SDIFF`), numeric commands, and RDB-style snapshots with save/load. Thread-safe keyspace behind a re-entrant lock, with an incremental RESP protocol parser. Benchmarked at ~36k ops/sec over loopback; backed by a 212-test pytest suite that spins up a real server and speaks RESP over a socket. Also shipped twenty-one dependency-free Python CLI tools, one per day (Nov 7–27, 2026), each with its own test suite.",
       tags: ["Python", "Networking", "Databases", "Systems"],
       link: "",
       repo: "https://github.com/ujjwalbhatiaa/tiny-redis",
@@ -392,6 +392,15 @@ const DATA = {
       link: "",
       repo: "https://github.com/ujjwalbhatiaa/benchit",
       highlight: "Benchmarking",
+    },
+    {
+      title: "httpstat — HTTP Status & Redirect Checker",
+      blurb:
+        "Dependency-free Python CLI that checks HTTP(S) URLs and reports status code, redirect chain, final URL, content-type, content-length and response time, with JSON output and parallel checks. 35-test unittest suite.",
+      tags: ["Python", "CLI"],
+      link: "",
+      repo: "https://github.com/ujjwalbhatiaa/httpstat",
+      highlight: "HTTP checker",
     },
     {
       title: "epoch — CLI Timestamp Converter",
